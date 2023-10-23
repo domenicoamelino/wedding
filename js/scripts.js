@@ -184,10 +184,10 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Domenico and Danielle's Wedding",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Jun 16, 2024 17:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
@@ -197,7 +197,7 @@ $(document).ready(function () {
             end: new Date('Nov 29, 2017 00:00'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: 'IL SAN CRISTOFORO VIA SACERDOTE BENEDETTO COZZOLINO 29 ERCOLANO . NAPOLI . ITALIA ',
 
             // Event Description
             description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
@@ -218,7 +218,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbwgh_eNnmtv7Zjklsu105-lM-d1DEyfmfQTczQePoxhOz91tdy6rC_-LQCsC96-bEyx/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
