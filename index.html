@@ -81,6 +81,14 @@
                     action=""
                     method="POST">
                   <div class="row">
+                    <div class="col-md-12"> 
+                    <div class="form-input-group">
+                        <i class="fa fa-user"></i><input type="name" name="name" class=""
+                                                             placeholder="Family Name"
+                                                             required>
+                    </div>
+                    </div>
+                    <!--
                       <div class="col-md-6 col-sm-6">
                           <div class="form-input-group">
                               <i class="fa fa-envelope"></i><input type="email" name="email" class=""
@@ -88,6 +96,7 @@
                                                                    required>
                           </div>
                       </div>
+                    
                       <div class="col-md-6 col-sm-6">
                           <div class="form-input-group">
                               <i class="fa fa-user"></i><input name="name" class=""
@@ -95,16 +104,26 @@
                                                                required>
                           </div>
                       </div>
+                      -->
                   </div>
                   <div class="row">
                       <div class="col-md-6 col-sm-6">
                           <div class="form-input-group">
-                              <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                              <i class="fa fa-users"></i><input type="number" name="adults" class="" min="0"
                                                                 max="4"
-                                                                placeholder="Husband/Wife or kids"
+                                                                placeholder="Put the Number of Adults"
                                                                 required>
                           </div>
                       </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-input-group">
+                            <i class="fa fa-users"></i><input type="number" name="children" class="" min="0"
+                                                              max="4"
+                                                              placeholder="Put the number of children"
+                                                              required>
+                        </div>
+                    </div>
+                       <!--
                       <div class="col-md-6 col-sm-6">
                           <div class="form-input-group">
                               <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
@@ -113,13 +132,33 @@
                                                               required>
                           </div>
                       </div>
+                      -->
                   </div>
+                  <div class="row">
+                    <div class="col-md-12"> 
+                    <div class="form-input-group">
+                        <i class="fa fa-comment"></i><input type="name" name="comments" class="" min="0"
+                                                          max="4"
+                                                          placeholder="Any comment?"
+                                                          required>
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"> 
+                    <div class="form-input-group">
+                        <i class="fa fa-info"></i><input type="name" name="diet" class="" min="0"
+                                                          max="4"
+                                                          placeholder="Do you have any dietary restrinction?"
+                                                          required>
+                    </div>
+                </div>
+                </div>
                   <div class="row">
                       <div class="col-md-12" id="alert-wrapper"></div>
                   </div>
                   <button class="btn-fill rsvp-btn">
-                      Yes,
-                      that's me!
+                      Send
                   </button>
               </form>
           </div>
